@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,35 +21,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcn-zT-7Zl">
-                                <rect key="frame" x="269" y="20" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KN-il-UVz">
-                                <rect key="frame" x="54.5" y="617" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFX-yF-VUC">
                                 <rect key="frame" x="108.5" y="617" width="158" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="hello hello its me mario"/>
+                                <connections>
+                                    <action selector="buttonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tni-rz-bpF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvM-NU-dPD">
-                                <rect key="frame" x="108" y="547" width="46" height="30"/>
+                                <rect key="frame" x="108" y="547" width="158" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="KYS-W2-FkK"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbQ-7s-wYe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SvM-NU-dPD" firstAttribute="leading" secondItem="TFX-yF-VUC" secondAttribute="leading" id="2HZ-X1-ipf"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1KN-il-UVz" secondAttribute="bottom" constant="20" id="6md-gd-U2y"/>
-                            <constraint firstItem="TFX-yF-VUC" firstAttribute="leading" secondItem="1KN-il-UVz" secondAttribute="trailing" constant="8" id="CYK-8u-J6d"/>
-                            <constraint firstItem="Pcn-zT-7Zl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-44" id="CuL-mT-qZD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TFX-yF-VUC" secondAttribute="bottom" constant="20" id="GdH-v2-vfT"/>
                             <constraint firstItem="TFX-yF-VUC" firstAttribute="top" secondItem="SvM-NU-dPD" secondAttribute="bottom" constant="40" id="VEP-dc-mih"/>
                             <constraint firstItem="TFX-yF-VUC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lcg-bK-ZQI"/>
-                            <constraint firstItem="Pcn-zT-7Zl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wK0-lT-Scj"/>
+                            <constraint firstItem="TFX-yF-VUC" firstAttribute="width" secondItem="SvM-NU-dPD" secondAttribute="width" id="n1A-Lq-6kd"/>
                         </constraints>
                     </view>
                 </viewController>
